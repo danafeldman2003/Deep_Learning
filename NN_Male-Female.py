@@ -144,8 +144,8 @@ class NeuralNetwork:
                 1 is female
                 
         '''
-        result=self.feed_forward(test_inputs,self.weights_i_to_h,self.bias_i_to_h)
-        return self.feed_forward(result,self.weights_h_to_o,self.bias_h_to_o)
+        result=self.feed_forward(test_inputs,self.weights_i_to_h,self.bias_i_to_h) #forward pass first layer
+        return self.feed_forward(result,self.weights_h_to_o,self.bias_h_to_o) #return forward pass of second layer
     
 
 
